@@ -83,12 +83,13 @@ export const MobileMenu = styled.div`
 `
 
 export const Brand = styled.div`
+  width: 175px;
+  margin: 0;
   font-family: ${props => props.theme.font.extrabold};
   ${props => props.theme.font_size.regular};
   color: ${props => props.theme.color.black.regular};
   text-decoration: none;
   letter-spacing: 1px;
-  margin: 0;
   ul {
     list-style: none;
     margin: 0;

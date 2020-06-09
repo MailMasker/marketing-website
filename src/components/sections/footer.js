@@ -1,7 +1,6 @@
+import { Container } from "../global"
 import React from "react"
 import styled from "styled-components"
-
-import { Container } from "../global"
 
 const Footer = () => (
   <FooterWrapper id="footer">
@@ -36,7 +35,7 @@ const Footer = () => (
       </FooterColumn>
     </FooterColumnContainer>
     <BrandContainer>
-      <Logo>Finance</Logo>
+      <Logo>Mail Masker</Logo>
     </BrandContainer>
   </FooterWrapper>
 )

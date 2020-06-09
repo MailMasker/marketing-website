@@ -14,7 +14,7 @@ import React, { Component } from "react"
 
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { Container } from "../../global"
-import { Link } from "gatsby"
+import LogoImage from './logoImage'
 import Scrollspy from "react-scrollspy"
 
 const NAV_ITEMS = ["Features", "Product", "Pricing", ""]
@@ -79,7 +79,7 @@ export default class Navigation extends Component {
           <Brand>
             <Scrollspy offset={-64} item={["top"]} currentClassName="active">
               <AnchorLink href="#top" onClick={this.closeMobileMenu}>
-                Finance
+                <LogoImage />
               </AnchorLink>
             </Scrollspy>
           </Brand>
