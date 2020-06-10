@@ -3,11 +3,11 @@ import { Container, Section } from "../global"
 import React from "react"
 import styled from "styled-components"
 
-const Features = () => (
-  <StyledSection id="features">
+const Pricing = () => (
+  <Section id="pricing">
     <StyledContainer>
-      <Subtitle>Features</Subtitle>
-      <SectionTitle>Private and convenient</SectionTitle>
+      <Subtitle>Pricing</Subtitle>
+      <SectionTitle>Flexible plans with no surprises</SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
           <FeatureTitle>Control SPAM</FeatureTitle>
@@ -53,16 +53,12 @@ const Features = () => (
         </FeatureItem>
       </FeaturesGrid>
     </StyledContainer>
-  </StyledSection>
+  </Section>
 )
 
-export default Features
+export default Pricing
 
-
-const StyledSection = styled(Section)``
-
-const StyledContainer = styled(Container)`
-`
+const StyledContainer = styled(Container)``
 
 const SectionTitle = styled.h3`
   color: ${props => props.theme.color.primary};

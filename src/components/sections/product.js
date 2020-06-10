@@ -1,11 +1,11 @@
+import { Link, graphql, navigate, useStaticQuery } from "gatsby"
 import React, { useState } from "react"
-import { graphql, useStaticQuery } from "gatsby"
 
 import { Container } from "../global"
 import Img from "gatsby-image"
 import styled from "styled-components"
 
-const Header = () => {
+const Product = () => {
   const [email, setEmail] = useState("")
 
   const data = useStaticQuery(graphql`
@@ -26,56 +26,30 @@ const Header = () => {
   }
 
   return (
-    <HeaderWrapper id="top">
+    <HeaderWrapper id="product">
       <Container>
-        <Flex>
           <HeaderTextGroup>
-            <Subtitle>Email on your terms</Subtitle>
+            <Subtitle>Product</Subtitle>
             <h1>
-              Protect your privacy,
-              <br />
-              use a Mail Mask.
+              Your Mail Mask forwards<br />to your real email
             </h1>
             <h2>
-              Instead of giving companies your email address, give them your
-              Mail Mask.
+              Let's look at some examples:
             </h2>
-            <h2>
-              We forward email to you, and you can stop the forwarding whenever
-              you want. Free forever.
-            </h2>
-            <HeaderForm onSubmit={handleSubmit}>
-              <HeaderInput
-                placeholder="you@mailmasker.com"
-                value={email}
-                onChange={event => setEmail(event.target.value)}
-              />
-              <HeaderButton>Create Mail Mask</HeaderButton>
-            </HeaderForm>
-            <FormSubtitle>
-              Already have an account?{" "}
-              <FormSubtitleLink href="https://app.mailmasker.com/log-in">
-                Log in
-              </FormSubtitleLink>
-            </FormSubtitle>
           </HeaderTextGroup>
-          <ImageWrapper>
-            <StyledImage fluid={data.file.childImageSharp.fluid} />
-            <br />
-          </ImageWrapper>
-        </Flex>
       </Container>
     </HeaderWrapper>
   )
 }
 
-export default Header
+export default Product
 
 const HeaderWrapper = styled.header`
   background-color: #f8f8f8;
-  padding: 160px 0 80px 0;
+  padding: 160px 0 150px 0;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+  text-align: center;
+  clip-path: polygon(0 0, 100% 14%, 100% 100%, 0 calc(100% - 5vw));
   @media (max-width: ${props => props.theme.screen.md}) {
   }
 `
