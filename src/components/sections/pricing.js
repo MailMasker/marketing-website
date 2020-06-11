@@ -1,6 +1,9 @@
+import "tippy.js/dist/tippy.css" // eslint-disable-line
+
 import { Container, Section } from "../global"
 
 import React from "react"
+import Tippy from "@tippyjs/react"
 import styled from "styled-components"
 
 const freeFeatures = [
@@ -67,19 +70,32 @@ const Pricing = () => (
           <FeatureTitle>Free</FeatureTitle>
           <FeatureSubtitle>$0</FeatureSubtitle>
           {freeFeatures.map(feature => (
-            <FeatureLineItem>{feature.title}</FeatureLineItem>
+            <Tippy content={<span>{feature.description}</span>}>
+              <FeatureLineItem>
+                <span>{feature.title}</span>
+              </FeatureLineItem>
+            </Tippy>
           ))}
         </FeatureItemFree>
         <FeatureItemPremium>
           <FeatureTitlePremium>Premium</FeatureTitlePremium>
           <FeatureSubtitlePremium>
-            $1 / month<FeatureSubSubtitle> or $9 / year</FeatureSubSubtitle>
+            $12 / year
+            {/* <FeatureSubSubtitle> or $9 / year</FeatureSubSubtitle> */}
           </FeatureSubtitlePremium>
           {premiumFeatures.map((feature, index) =>
             index > 0 ? (
-              <FeatureLineItemPremium>{feature.title}</FeatureLineItemPremium>
+              <Tippy content={<span>{feature.description}</span>}>
+                <FeatureLineItemPremium>
+                  <span>{feature.title}</span>
+                </FeatureLineItemPremium>
+              </Tippy>
             ) : (
-              <FeatureLineItem>{feature.title}</FeatureLineItem>
+              <Tippy content={<span>{feature.description}</span>}>
+                <FeatureLineItem>
+                  <span>{feature.title}</span>
+                </FeatureLineItem>
+              </Tippy>
             )
           )}
         </FeatureItemPremium>
@@ -177,6 +193,7 @@ const FeatureLineItem = styled.div`
   :last-child {
     border-bottom: none;
   }
+  cursor: help;
 `
 const FeatureLineItemPremium = styled(FeatureLineItem)`
   color: #3e898b;
