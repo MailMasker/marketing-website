@@ -9,6 +9,12 @@ export const Nav = styled.nav`
   z-index: 1000;
   background: ${props => (props.scrolled ? `white` : null)};
   transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  ${({ mobileMenuOpen }) =>
+    mobileMenuOpen &&
+    ` 
+    background: white;
+  `};
 `
 
 export const StyledContainer = styled(Container)`

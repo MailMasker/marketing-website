@@ -1,1 +1,2 @@
-aws-vault exec email-forwarder-dev aws s3 sync build/ s3://email-forwarder-www-dev
+gatsby build
+aws-vault exec email-forwarder-dev aws s3 sync public/ s3://email-forwarder-www-dev

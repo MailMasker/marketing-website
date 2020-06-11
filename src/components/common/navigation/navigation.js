@@ -14,7 +14,7 @@ import React, { Component } from "react"
 
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { Container } from "../../global"
-import LogoImage from './logoImage'
+import LogoImage from "./logoImage"
 import Scrollspy from "react-scrollspy"
 
 const NAV_ITEMS = ["Features", "Product", "Pricing", ""]
@@ -67,6 +67,16 @@ export default class Navigation extends Component {
           <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
         ))}
       </Scrollspy>
+      <Mobile>
+        <ul>
+          <NavItem>
+            <a href="https://app.mailmasker.com/sign-up">Sign up</a>
+          </NavItem>
+          <NavItem>
+            <a href="https://app.mailmasker.com/log-in">Log in</a>
+          </NavItem>
+        </ul>
+      </Mobile>
     </NavListWrapper>
   )
 
@@ -74,7 +84,11 @@ export default class Navigation extends Component {
     const { mobileMenuOpen } = this.state
 
     return (
-      <Nav {...this.props} scrolled={this.state.hasScrolled}>
+      <Nav
+        {...this.props}
+        mobileMenuOpen={mobileMenuOpen}
+        scrolled={this.state.hasScrolled}
+      >
         <StyledContainer>
           <Brand>
             <Scrollspy offset={-64} item={["top"]} currentClassName="active">
