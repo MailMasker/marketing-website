@@ -3,54 +3,86 @@ import { Container, Section } from "../global"
 import React from "react"
 import styled from "styled-components"
 
+const freeFeatures = [
+  {
+    title: "Your Mail Masks are yours forever",
+    description:
+      "Once you create a Mail Mask (ex: you@mailmasker.com), it belongs to your account forever and no one else can use it.",
+  },
+  {
+    title: "3 primary Mail Masks",
+    description:
+      "You can create up to 3 Mail Masks (ex: you@mailmasker.com), and unlimited secondary masks (ex: you.whatever1@mailmasker.com, you.whatever2@mailmasker.com, etc)",
+  },
+  {
+    title: "Unlimited secondary Mail Masks",
+    description:
+      "A secondary Mail Mask has a dot after the alias of one of your primary Mail Masks. For example, if your primary Mail Mask was you@example.com, then you could create a secondary mask by sending an email to you.whatever@example.com.",
+  },
+  {
+    title: "Forward to 1 email",
+    description:
+      "Your Mail Masks will forward to a single external email address.",
+  },
+  {
+    title: "Data export",
+    description:
+      "We allow you to download a full record of your data in our system.",
+  },
+]
+
+const premiumFeatures = [
+  {
+    title: "+ All Free features",
+    description: "Premium includes everything in the Free plan, plus more!",
+  },
+  {
+    title: "Unlimited primary Mail Masks",
+    description:
+      "Create as many as you'd like: you1@mailmasker.com, you2@mailmasker.com, etc",
+  },
+  {
+    title: "Forward to unlimited addresses",
+    description:
+      "Set up complex workflows by forwarding email received at each Mail Mask to a different email inbox.",
+  },
+  {
+    title: "Automatically-stopping Mail Masks",
+    description: `You can add ".14d" to any Mail Mask (ex: you.14d@mailmasker.com) and that Mail Mask will automatically stop forwarding email in 14 days.`,
+  },
+  {
+    title: "Forward to stop@mailmasker.com",
+    description:
+      "Stopping your Mail Mask is the quickest way to completely stop unwanted email, and you can stop your Mail Mask simply by re-forwarding any email to stop@mailmasker.com.",
+  },
+]
+
 const Pricing = () => (
   <Section id="pricing">
     <StyledContainer>
       <Subtitle>Pricing</Subtitle>
       <SectionTitle>Flexible plans with no surprises</SectionTitle>
       <FeaturesGrid>
-        <FeatureItem>
-          <FeatureTitle>Control SPAM</FeatureTitle>
-          <FeatureText>
-            If you start to receive unwanted email, just disable your Mail Mask:
-            problem solved.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Free Forever</FeatureTitle>
-          <FeatureText>
-            Your Mail Masks are yours forever, and there's no pressure to
-            upgrade to a paid plan.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Security</FeatureTitle>
-          <FeatureText>
-            Make it harder for others to access your accounts when they can't
-            guess which email address you used to sign up.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Avoid being tracked</FeatureTitle>
-          <FeatureText>
-            Use a unique email address for every service you sign up for to make
-            tracking you harder.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>We don't want your data</FeatureTitle>
-          <FeatureText>
-            We delete your emails from our servers as soon as they're forwarded
-            to you, and we'll never share or sell your data.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Time-limited Masks</FeatureTitle>
-          <FeatureText>
-            Configure your Mail Masks to automatically expire, say, after 14
-            days, to effortlessly prevent unwanted email.
-          </FeatureText>
-        </FeatureItem>
+        <FeatureItemFree>
+          <FeatureTitle>Free</FeatureTitle>
+          <FeatureSubtitle>$0</FeatureSubtitle>
+          {freeFeatures.map(feature => (
+            <FeatureLineItem>{feature.title}</FeatureLineItem>
+          ))}
+        </FeatureItemFree>
+        <FeatureItemPremium>
+          <FeatureTitlePremium>Premium</FeatureTitlePremium>
+          <FeatureSubtitlePremium>
+            $1 / month<FeatureSubSubtitle> or $9 / year</FeatureSubSubtitle>
+          </FeatureSubtitlePremium>
+          {premiumFeatures.map((feature, index) =>
+            index > 0 ? (
+              <FeatureLineItemPremium>{feature.title}</FeatureLineItemPremium>
+            ) : (
+              <FeatureLineItem>{feature.title}</FeatureLineItem>
+            )
+          )}
+        </FeatureItemPremium>
       </FeaturesGrid>
     </StyledContainer>
   </Section>
@@ -85,22 +117,70 @@ const FeaturesGrid = styled.div`
   grid-row-gap: 35px;
   @media (max-width: ${props => props.theme.screen.sm}) {
     grid-template-columns: 1fr;
-    padding: 0 64px;
   }
 `
 
-const FeatureItem = styled.div`
+const FeatureItemFree = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+`
+
+const FeatureItemPremium = styled(FeatureItemFree)`
+  border: 1px solid #3e898b;
 `
 
 const FeatureTitle = styled.h4`
   color: ${props => props.theme.color.primary};
   letter-spacing: 0px;
   line-height: 30px;
-  margin-bottom: 10px;
+  margin: 16px 0 10px 0;
+  padding: 0;
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    font-size: 1.6em;
+  }
+`
+
+const FeatureTitlePremium = styled(FeatureTitle)`
+  color: #3e898b;
+`
+
+const FeatureSubtitle = styled.h3`
+  color: ${props => props.theme.color.primary};
+  letter-spacing: 0px;
+  line-height: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0 0 16px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    font-size: 1.2em;
+  }
+`
+
+const FeatureSubtitlePremium = styled(FeatureSubtitle)``
+
+const FeatureSubSubtitle = styled.span`
+  font-size: 0.8em;
+`
+
+const FeatureLineItem = styled.div`
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+  :last-child {
+    border-bottom: none;
+  }
+`
+const FeatureLineItemPremium = styled(FeatureLineItem)`
+  color: #3e898b;
+  font-weight: bolder;
 `
 
 const FeatureText = styled.p`

@@ -86,6 +86,8 @@ const SectionWrapper = styled.section`
   text-align: center;
   clip-path: polygon(0 0, 100% 14%, 100% 100%, 0 calc(100% - 5vw));
   @media (max-width: ${props => props.theme.screen.md}) {
+    padding: 100px 0 150px 0;
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 calc(100% - 5vw));
   }
 `
 const Subtitle = styled.h5`

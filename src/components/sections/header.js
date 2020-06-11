@@ -45,12 +45,15 @@ const Header = () => {
               you want. Free forever.
             </h2>
             <HeaderForm onSubmit={handleSubmit}>
-              <HeaderInput
-                placeholder="you@mailmasker.com"
-                value={email}
-                onChange={event => setEmail(event.target.value)}
-              />
-              <HeaderButton>Create Mail Mask</HeaderButton>
+              <HeaderInputWrapper>
+                <HeaderInput
+                  placeholder="you"
+                  value={email}
+                  onChange={event => setEmail(event.target.value)}
+                />
+                <HeaderInputRightLabel>@mailmasker.com</HeaderInputRightLabel>
+              </HeaderInputWrapper>
+              <HeaderButton>Claim Mail Mask</HeaderButton>
             </HeaderForm>
             <FormSubtitle>
               Already have an account?{" "}
@@ -88,6 +91,7 @@ const Subtitle = styled.h5`
 
 const HeaderTextGroup = styled.div`
   margin: 0;
+  max-width: 100%;
 
   > div {
     width: 120%;
@@ -114,14 +118,9 @@ const HeaderTextGroup = styled.div`
 `
 
 const Flex = styled.div`
-  display: grid;
+  display: flex;
   justify-content: space-between;
   align-content: center;
-  grid-template-columns: 1fr 1fr;
-  @media (max-width: ${props => props.theme.screen.md}) {
-    grid-template-columns: 1fr;
-    grid-gap: 64px;
-  }
 `
 
 const HeaderForm = styled.form`
@@ -146,20 +145,28 @@ const FormSubtitleLink = styled.a`
   border-bottom: 1px solid ${props => props.theme.color.secondary};
 `
 
+const HeaderInputWrapper = styled.div`
+  display: flex;
+  justify-content: stretch;
+  @media (max-width: ${props => props.theme.screen.sm}) {
+  }
+`
+
 const HeaderInput = styled.input`
+  width: 50%;
   font-weight: 500;
   font-size: 16px;
   color: ${props => props.theme.color.primary};
   line-height: 42px;
-  width: 100%;
-  text-align: left;
+  text-align: right;
   height: 60px;
   border-width: 1px;
   border-style: solid;
   border-color: ${props => props.theme.color.secondary};
   border-image: initial;
-  border-radius: 4px;
-  padding: 8px 16px;
+  border-radius: 4px 0px 0px 4px;
+  border-right: none;
+  padding: 8px 6px 8px 8px;
   outline: 0px;
   &:focus {
     box-shadow: inset ${props => props.theme.color.secondary} 0px 0px 0px 2px;
@@ -167,10 +174,21 @@ const HeaderInput = styled.input`
   @media (max-width: ${props => props.theme.screen.md}) {
     margin-bottom: 8px;
   }
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    display: block;
-    width: 100%;
-  }
+`
+
+const HeaderInputRightLabel = styled.div`
+  width: 50%;
+  font-weight: 500;
+  font-size: 16px;
+  color: ${props => props.theme.color.primary};
+  line-height: 42px;
+  height: 60px;
+  padding: 8px 8px 8px 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: ${props => props.theme.color.secondary};
+  border-radius: 0px 4px 4px 0px;
+  border-left: none;
 `
 
 const HeaderButton = styled.button`
@@ -211,10 +229,10 @@ const ImageWrapper = styled.div`
 
 const StyledImage = styled(Img)`
   width: 500px;
-  @media (max-width: ${props => props.theme.screen.md}) {
-    width: 400px;
+  @media (max-width: ${props => props.theme.screen.lg}) {
+    width: 300px;
   }
-  @media (max-width: ${props => props.theme.screen.sm}) {
+  @media (max-width: ${props => props.theme.screen.md}) {
     width: 300px;
     display: none;
   }
