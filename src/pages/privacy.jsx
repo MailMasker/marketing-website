@@ -67,6 +67,7 @@ const PrivacyPage = () => (
           free to contact us.
         </p>
         <p>This policy is effective as of 12 June 2020.</p>
+        <hr />
         <p>
           See an issue with this Privacy Policy, or have something you'd like to
           discuss? We'd love to discuss it with you at{" "}

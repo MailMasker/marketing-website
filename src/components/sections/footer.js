@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
 import { Container } from "../global"
 import { FiMail } from "react-icons/fi"
@@ -55,6 +55,14 @@ const Footer = () => {
         <Logo>
           <StyledImage fluid={data.file.childImageSharp.fluid} />
         </Logo>
+        <ul>
+          <li>
+            <Link to="terms">Terms of Service</Link>
+          </li>
+          <li>
+            <Link to="privacy">Privacy Policy</Link>
+          </li>
+        </ul>
         <FooterBottomItemsContainer>
           <ul>
             <li>
@@ -103,6 +111,36 @@ const BrandContainer = styled(Container)`
     flex-direction: column;
     justify-content: flex-start;
   }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: ${props => props.theme.color.black.regular};
+
+    @media (max-width: ${props => props.theme.screen.sm}) {
+      margin-top: 16px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    li {
+      text-align: right;
+      margin-bottom: 12px;
+      font-family: ${props => props.theme.font.normal};
+      font-size: 15px;
+      padding: 12px;
+      margin: 0;
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: rgba(7, 20, 53, 0.5);
+      }
+    }
+  }
 `
 // const FooterColumnContainer = styled(Container)`
 //   display: grid;
@@ -144,6 +182,7 @@ const FooterBottomItemsContainer = styled.div`
     padding: 0;
     color: ${props => props.theme.color.black.regular};
     li {
+      text-align: right;
       margin-bottom: 12px;
       font-family: ${props => props.theme.font.normal};
       font-size: 15px;
@@ -162,9 +201,6 @@ const FooterBottomItemsContainer = styled.div`
 
 const StyledImage = styled(Img)`
   width: 175px;
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    width: 100px;
-  }
 `
 
 export default Footer
