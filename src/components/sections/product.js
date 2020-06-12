@@ -1,8 +1,5 @@
-import { Link, graphql, navigate, useStaticQuery } from "gatsby"
-import React, { useState } from "react"
-
 import { Container } from "../global"
-import Img from "gatsby-image"
+import React from "react"
 import styled from "styled-components"
 
 const Product = () => {

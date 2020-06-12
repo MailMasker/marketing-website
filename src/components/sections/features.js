@@ -12,8 +12,8 @@ const Features = () => (
         <FeatureItem>
           <FeatureTitle>Control SPAM</FeatureTitle>
           <FeatureText>
-            If you start to receive unwanted email, just disable your Mail Mask:
-            problem solved.
+            Receiving unwanted email? Just disable your Mail Mask. Avoid
+            companies' painful, unreliable unsubscribe steps.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
@@ -45,10 +45,10 @@ const Features = () => (
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Time-limited Masks</FeatureTitle>
+          <FeatureTitle>Open Source</FeatureTitle>
           <FeatureText>
-            Configure your Mail Masks to automatically expire, say, after 14
-            days, to effortlessly prevent unwanted email.
+            We've made Mail Masker is open source to increase transparency,
+            accountability, auditability, and trust.
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>
@@ -58,11 +58,9 @@ const Features = () => (
 
 export default Features
 
-
 const StyledSection = styled(Section)``
 
-const StyledContainer = styled(Container)`
-`
+const StyledContainer = styled(Container)``
 
 const SectionTitle = styled.h3`
   color: ${props => props.theme.color.primary};

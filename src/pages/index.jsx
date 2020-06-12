@@ -12,7 +12,7 @@ import SEO from "../components/common/layout/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Navigation />
+    <Navigation isIndexPage />
     <Header />
     <Features />
     <Product />

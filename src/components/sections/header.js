@@ -32,7 +32,7 @@ const Header = () => {
           <HeaderTextGroup>
             <Subtitle>Email on your terms</Subtitle>
             <h1>
-              Protect your privacy,
+              It's your privacy,
               <br />
               use a Mail Mask.
             </h1>

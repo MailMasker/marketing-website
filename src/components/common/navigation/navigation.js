@@ -81,6 +81,7 @@ export default class Navigation extends Component {
   )
 
   render() {
+    const { isIndexPage } = this.props
     const { mobileMenuOpen } = this.state
 
     return (
@@ -91,11 +92,17 @@ export default class Navigation extends Component {
       >
         <StyledContainer>
           <Brand>
-            <Scrollspy offset={-64} item={["top"]} currentClassName="active">
-              <AnchorLink href="#top" onClick={this.closeMobileMenu}>
+            {isIndexPage ? (
+              <Scrollspy offset={-64} item={["top"]} currentClassName="active">
+                <AnchorLink href="#top" onClick={this.closeMobileMenu}>
+                  <LogoImage />
+                </AnchorLink>
+              </Scrollspy>
+            ) : (
+              <a href="/">
                 <LogoImage />
-              </AnchorLink>
-            </Scrollspy>
+              </a>
+            )}
           </Brand>
           <Mobile>
             <button
@@ -110,7 +117,7 @@ export default class Navigation extends Component {
             </button>
           </Mobile>
 
-          <Mobile hide>{this.getNavList({})}</Mobile>
+          {isIndexPage && <Mobile hide>{this.getNavList({})}</Mobile>}
           <ActionsContainer>
             <NavStandaloneLink>
               <a
@@ -125,13 +132,15 @@ export default class Navigation extends Component {
             </a>
           </ActionsContainer>
         </StyledContainer>
-        <Mobile>
-          {mobileMenuOpen && (
-            <MobileMenu>
-              <Container>{this.getNavList({ mobile: true })}</Container>
-            </MobileMenu>
-          )}
-        </Mobile>
+        {isIndexPage && (
+          <Mobile>
+            {mobileMenuOpen && (
+              <MobileMenu>
+                <Container>{this.getNavList({ mobile: true })}</Container>
+              </MobileMenu>
+            )}
+          </Mobile>
+        )}
       </Nav>
     )
   }

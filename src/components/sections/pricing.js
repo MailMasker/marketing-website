@@ -100,6 +100,10 @@ const Pricing = () => (
           )}
         </FeatureItemPremium>
       </FeaturesGrid>
+      <BottomText>
+        Looking for self-hosted, custom domains, or team plans? Get in touch:{" "}
+        <a href="mailto:plans@mailmasker.com">plans@mailmasker.com</a>
+      </BottomText>
     </StyledContainer>
   </Section>
 )
@@ -200,6 +204,14 @@ const FeatureLineItemPremium = styled(FeatureLineItem)`
   font-weight: bolder;
 `
 
-const FeatureText = styled.p`
+const BottomText = styled.p`
+  margin-top: 50px;
   text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.4em;
+  a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: ${props => props.theme.color.primary};
+  }
 `
