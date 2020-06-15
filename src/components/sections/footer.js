@@ -57,10 +57,10 @@ const Footer = () => {
         </Logo>
         <ul>
           <li>
-            <Link to="/terms/index.html">Terms of Service</Link>
+            <Link to="/terms">Terms of Service</Link>
           </li>
           <li>
-            <Link to="/privacy/index.html">Privacy Policy</Link>
+            <Link to="/privacy">Privacy Policy</Link>
           </li>
         </ul>
         <FooterBottomItemsContainer>
