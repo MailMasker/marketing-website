@@ -1,6 +1,5 @@
 import { Container } from "../components/global"
 import Footer from "../components/sections/footer"
-import Header from "../components/sections/header"
 import Layout from "../components/common/layout/layout"
 import Navigation from "../components/common/navigation/navigation"
 import React from "react"

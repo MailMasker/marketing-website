@@ -185,9 +185,9 @@ const FeatureSubtitle = styled.h3`
 
 const FeatureSubtitlePremium = styled(FeatureSubtitle)``
 
-const FeatureSubSubtitle = styled.span`
-  font-size: 0.8em;
-`
+// const FeatureSubSubtitle = styled.span`
+//   font-size: 0.8em;
+// `
 
 const FeatureLineItem = styled.div`
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
