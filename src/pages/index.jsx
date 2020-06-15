@@ -11,7 +11,7 @@ import SEO from "../components/common/layout/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Mail Masker" />
     <Navigation isIndexPage />
     <Header />
     <Features />

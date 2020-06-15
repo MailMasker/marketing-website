@@ -38,7 +38,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "NODE_TLS_REJECT_UNAUTHORIZED=0 yarn develop --https --cert-file ./localhost.cert --key-file ./localhost.key",
+    "start": "NODE_TLS_REJECT_UNAUTHORIZED=0 yarn develop --https --port 8500 --cert-file ./localhost.cert --key-file ./localhost.key",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },

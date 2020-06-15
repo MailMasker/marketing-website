@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Mail Masker`,
-    description: `A privacy-focused email service that helps limit spam and other unwanted email.`,
+    description: `Mail Masker is a privacy-focused email service that allows people to create “burner” email addresses which forward to your inbox until you disable them. It’s a great way to keep marketers at a distance by limiting unwanted email, and makes you harder to track.`,
     author: `Dewpoint Solutions, Inc`,
   },
   plugins: [

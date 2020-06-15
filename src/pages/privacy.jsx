@@ -8,7 +8,7 @@ import styled from "styled-components"
 
 const PrivacyPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Privacy Policy" />
     <Navigation />
     <PrivacyWrapper>
       <Container>

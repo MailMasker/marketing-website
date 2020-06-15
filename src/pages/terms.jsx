@@ -8,7 +8,7 @@ import styled from "styled-components"
 
 const TermsPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Terms of Service" />
     <Navigation />
     <TermsWrapper>
       <Container>
