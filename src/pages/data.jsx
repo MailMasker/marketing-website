@@ -54,22 +54,11 @@ const DataPage = () => (
           permanently erased. Similarly, if you choose to delete your account,
           we remove and erase all of your Verified Email addresses.
         </p>
-        <p>
-          If you sign up for a paid plan, our payment provider, Stripe, will ask
-          you for your name and email address.{" "}
-          <u>
-            We don't have the ability to fully remove your name and email
-            address from Stripe's system.
-          </u>
-        </p>
         <SectionHeader>Payment information</SectionHeader>
         <p>
           If you sign up for a paid plan, our payment provider, Stripe, will ask
-          you for your name and email address.{" "}
-          <u>
-            We don't have the ability to fully remove your name and email
-            address from Stripe's system.
-          </u>
+          you for your name and email address. We don't have the ability to
+          fully remove your name and email address from Stripe's system.
         </p>
         <p>
           Stripe also collects your credit card number, but we don't have access
