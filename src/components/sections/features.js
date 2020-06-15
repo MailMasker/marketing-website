@@ -1,5 +1,6 @@
 import { Container, Section } from "../global"
 
+import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 
@@ -40,15 +41,22 @@ const Features = () => (
         <FeatureItem>
           <FeatureTitle>We don't want your data</FeatureTitle>
           <FeatureText>
-            We delete your emails from our servers as soon as they're forwarded
-            to you, and we'll never share or sell your data.
+            We delete your emails from our servers ASAP, and we'll never share
+            or sell your data. <Link to="/data/">Full details.</Link>
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>Open Source</FeatureTitle>
           <FeatureText>
             We've made Mail Masker is open source to increase transparency,
-            accountability, auditability, and trust.
+            accountability, auditability, and trust.{" "}
+            <a
+              href="https://github.com/mailmasker"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View source.
+            </a>
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>
