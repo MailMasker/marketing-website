@@ -115,4 +115,8 @@ const FeatureTitle = styled.h4`
 
 const FeatureText = styled.p`
   text-align: center;
+  a {
+    text-decoration: none;
+    color: ${props => props.theme.color.secondary};
+  }
 `
