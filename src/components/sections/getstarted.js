@@ -8,11 +8,9 @@ const GetStarted = () => (
     <GetStartedContainer>
       <GetStartedTitle>Get started</GetStartedTitle>
 
-      <TryItButton>
-        <a href="https://app.mailmasker.com/sign-up">
-          Create your first Mail Mask
-        </a>
-      </TryItButton>
+      <TryItLink href="https://app.mailmasker.com/sign-up">
+        <TryItButton>Create your first Mail Mask</TryItButton>
+      </TryItLink>
 
       <Subtitle>No credit card required for the Free Plan.</Subtitle>
     </GetStartedContainer>
@@ -39,10 +37,17 @@ const GetStartedTitle = styled.h3`
   text-align: center;
 `
 
+const TryItLink = styled.a`
+  text-decoration: none;
+  opacity: 0.9;
+  color: white;
+`
+
 const TryItButton = styled.button`
   font-weight: 500;
   font-size: 14px;
   color: white;
+  text-decoration: none;
   letter-spacing: 1px;
   height: 60px;
   display: block;
@@ -65,11 +70,6 @@ const TryItButton = styled.button`
   }
   @media (max-width: ${props => props.theme.screen.sm}) {
     margin-left: 0;
-  }
-  a {
-    text-decoration: none;
-    opacity: 0.9;
-    color: white;
   }
 `
 
