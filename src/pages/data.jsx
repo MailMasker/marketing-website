@@ -124,6 +124,36 @@ const DataPage = () => (
             so, we'll only do so with your expressed consent.
           </li>
         </ul>
+        <h3>What risks should I be aware of?</h3>
+        <p>
+          Mail Masker is a US-based service: it is property of US-based Dewpoint
+          Solutions, Inc. and its servers are located in the US. The reason this
+          is important is because the US is what is known as a{" "}
+          <a
+            href="https://www.privacytools.io/providers/#ukusa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            "Five Eyes" country
+          </a>{" "}
+          with a history of mass government surveillance. For this reason, we
+          have a{" "}
+          <a
+            href="https://www.mailmasker.com/warrant-canary/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Warrant Canary
+          </a>{" "}
+          page that is updated monthly.{" "}
+          <a
+            href="https://www.eff.org/deeplinks/2014/04/warrant-canary-faq"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            More info on Warrant Canaries
+          </a>
+        </p>
         <hr style={{ marginTop: "32px" }} />
         <p>
           See an issue with this page, or have something you'd like to discuss?
