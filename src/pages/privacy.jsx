@@ -1,6 +1,7 @@
 import { Container } from "../components/global"
 import Footer from "../components/sections/footer"
 import Layout from "../components/common/layout/layout"
+import { Link } from "gatsby"
 import Navigation from "../components/common/navigation/navigation"
 import React from "react"
 import SEO from "../components/common/layout/seo"
@@ -23,13 +24,8 @@ const PrivacyPage = () => (
           and other sites we own and operate.
         </p>
         <p>
-          We do our reasonable best to state plainly what information we
-          collect. Currently, the best way to view that is in the Mail Masker
-          app's{" "}
-          <a href="https://app.mailmasker.com/settings/data-privacy">
-            Settings
-          </a>{" "}
-          section.
+          We do our reasonable best to{" "}
+          <Link to="/data">state plainly what information we collect.</Link>
         </p>
         <p>
           We only ask for personal information when we truly need it to provide

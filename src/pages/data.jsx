@@ -58,11 +58,10 @@ const DataPage = () => (
         <p>
           If you sign up for a paid plan, our payment provider, Stripe, will ask
           you for your name and email address. We don't have the ability to
-          fully remove your name and email address from Stripe's system.
-        </p>
-        <p>
-          Stripe also collects your credit card number, but we don't have access
-          to it.
+          fully remove your name and email address from Stripe's system;
+          however, upon request, we will delete as much of your data from Stripe
+          as we can. Stripe also collects your credit card number, but we don't
+          have access to it.
         </p>
         <SectionHeader>Your username and password</SectionHeader>
         <p>
@@ -84,13 +83,27 @@ const DataPage = () => (
           . We have no way to read or know your password, nor does any malicious
           person who were to gain access to our database.
         </p>
-        <SectionHeader>Usage data</SectionHeader>
+        <SectionHeader>Usage data / analytics</SectionHeader>
         <p>
-          We plan to collect usage data to help us make Mail Masker better. When
-          we do so, we will only store the bare minimum such as your User ID in
-          the analytics service, we will not use a 3rd party that is known to
-          track you, such as Google Analytics. At the time of this writing, we
-          don't have an analytics service running, but plan to soon.
+          We collect anonymized usage data to help us make Mail Masker better.
+          Specifically, we self-host a privacy-focused analytics tool called{" "}
+          <a
+            href="https://app.mailmasker.com,https://www.mailmasker.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ackee
+          </a>
+          . In short: it runs on our own servers, it doesn't use cookies, and it
+          uses a{" "}
+          <a
+            href="https://github.com/electerious/Ackee/blob/master/docs/Anonymization.md"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            multi-step process
+          </a>{" "}
+          to keep data anonymized.
         </p>
         <h3>What we don't collect</h3>
         <p>

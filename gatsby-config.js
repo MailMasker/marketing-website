@@ -40,6 +40,15 @@ module.exports = {
         icon: `src/images/favicon512.png`,
       },
     },
+    {
+      resolve: "gatsby-plugin-ackee-tracker",
+      options: {
+        domainId: process.env.ACKEE_DOMAIN_ID,
+        server: "https://mail-masker-analytics.herokuapp.com",
+        ignoreLocalhost: true,
+        detailed: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
