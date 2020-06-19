@@ -84,7 +84,7 @@ const DataPage = () => (
           . We have no way to read or know your password, nor does any malicious
           person who were to gain access to our database.
         </p>
-        <SectionHeader>Usage data / analytics</SectionHeader>
+        <SectionHeader>Usage data, analytics, and general logs</SectionHeader>
         <p>
           We collect anonymized usage data to help us make Mail Masker better.
           Specifically, we self-host a privacy-focused analytics tool called{" "}
@@ -105,6 +105,9 @@ const DataPage = () => (
             multi-step process
           </a>{" "}
           to keep data anonymized.
+        </p>
+        <p>
+          Our server logs are all set to be automatically deleted after 5 days.
         </p>
         <h3>What we don't collect</h3>
         <p>
