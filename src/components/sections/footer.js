@@ -181,7 +181,7 @@ const FooterBottomItemsContainer = styled.div`
   color: ${props => props.theme.color.primary};
   ul {
     list-style: none;
-    margin: 16px 0;
+    margin: 0;
     padding: 0;
     color: ${props => props.theme.color.black.regular};
     li {
@@ -189,6 +189,7 @@ const FooterBottomItemsContainer = styled.div`
       margin-bottom: 12px;
       font-family: ${props => props.theme.font.normal};
       font-size: 15px;
+      margin: 0;
       a {
         display: flex;
         align-items: center;

@@ -1,6 +1,7 @@
 import { Container } from "../components/global"
 import Footer from "../components/sections/footer"
 import Layout from "../components/common/layout/layout"
+import { Link } from "gatsby"
 import Navigation from "../components/common/navigation/navigation"
 import React from "react"
 import SEO from "../components/common/layout/seo"
@@ -137,15 +138,8 @@ const DataPage = () => (
             "Five Eyes" country
           </a>{" "}
           with a history of mass government surveillance. For this reason, we
-          have a{" "}
-          <a
-            href="https://www.mailmasker.com/warrant-canary/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Warrant Canary
-          </a>{" "}
-          page that is updated monthly.{" "}
+          have a <Link to="warrant-canary">Warrant Canary</Link> page that is
+          updated monthly.{" "}
           <a
             href="https://www.eff.org/deeplinks/2014/04/warrant-canary-faq"
             target="_blank"
@@ -153,6 +147,7 @@ const DataPage = () => (
           >
             More info on Warrant Canaries
           </a>
+          .
         </p>
         <hr style={{ marginTop: "32px" }} />
         <p>
