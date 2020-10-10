@@ -57,6 +57,9 @@ const Footer = () => {
         </Logo>
         <ul>
           <li>
+            <Link to="/about/">About</Link>
+          </li>
+          <li>
             <Link to="/terms/">Terms of Service</Link>
           </li>
           <li>
