@@ -61,3 +61,15 @@ This uses [styled-components](https://www.styled-components.com/). The theme fil
 
 This uses [react-anchor-link-smooth-scroll](https://github.com/mauricevancooten/react-anchor-link-smooth-scroll#readme) and [react-scrollspy](https://github.com/makotot/react-scrollspy).
 To link a navigation item to a section simply add an id and string value to a section parent element that corresponds to the same navigation string value in `navigation.js`
+
+### Updating the Warrant Canary
+
+We update our Warrant Canary once a month.
+
+```
+cd canary-tools
+./generate.sh
+# ... enter password that Jon has stored securely, which unlocks a private key
+```
+
+then commit the changes and deploy

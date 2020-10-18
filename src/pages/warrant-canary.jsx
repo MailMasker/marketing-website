@@ -78,8 +78,8 @@ const WarantCanaryPage = () => (
         </ol>
         <hr style={{ marginTop: "32px" }} />
         <p>
-          See an issue with this page, or have something you'd like to discuss?
-          We'd love to discuss it with you at{" "}
+          See an issue, or have something you'd like to discuss? We'd love to
+          discuss it with you at{" "}
           <a href="mailto:canary@mailmasker.com">canary@mailmasker.com</a>.
         </p>
       </Container>
