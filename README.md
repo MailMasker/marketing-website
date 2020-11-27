@@ -4,7 +4,7 @@ This is the code behind [mailmasker.com](https://www.mailmasker.com).
 
 ## License
 
-[No permission](https://choosealicense.com/no-permission/) is given for this repo to be used by others. Practically speaking, this code doesn't seem to be useful to anyone else.
+[No permission](https://choosealicense.com/no-permission/) is given for this repo to be used by others. Practically speaking, this code doesn't seem to be useful to anyone else; however, we believe that there is tremendous value in transparency of making it publically accessible.
 
 ## Usage
 
