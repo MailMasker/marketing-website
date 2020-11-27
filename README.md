@@ -1,4 +1,12 @@
-## MailMasker.com Marketing Webiste
+# MailMasker.com Marketing Website
+
+This is the code behind [mailmasker.com](https://www.mailmasker.com).
+
+## License
+
+[No permission](https://choosealicense.com/no-permission/) is given for this repo to be used by others. Practically speaking, this code doesn't seem to be useful to anyone else.
+
+## Usage
 
 ### Getting started
 
