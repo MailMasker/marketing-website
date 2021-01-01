@@ -1,7 +1,7 @@
 Mail Masker Warrant Canary
 ===================
 
-Once per month, Dewpoint Solutions will publish a 'warrant canary' in the form of a cryptographically signed message containing the following:
+Once per month Dewpoint Solutions will publish a 'warrant canary' in the form of a cryptographically signed message containing the following:
 
 - A declaration that, up to that point, no warrants have been served, nor have any searches or seizures taken place.
 - Headlines from a major news source demonstrating that the update could not have been created prior to that date.
@@ -13,24 +13,24 @@ The current message is here:
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
-As of 2020-10-18 no warrants have ever been served to Dewpoint Solutions or Dewpoint Solutions employees. No searches or seizures of any kind have ever been performed on Dewpoint Solutions assets. Dewpoint Solutions has no direct or indirect knowledge of any backdoors, or potential backdoors in our servers or network and Dewpoint Solutions has not received any requests to implement a backdoor. Dewpoint Solutions has never disclosed any user communications to any third party.
+As of 2021-01-01 no warrants have ever been served to Dewpoint Solutions or Dewpoint Solutions employees. No searches or seizures of any kind have ever been performed on Dewpoint Solutions assets. Dewpoint Solutions has no direct or indirect knowledge of any backdoors, or potential backdoors in our servers or network and Dewpoint Solutions has not received any requests to implement a backdoor. Dewpoint Solutions has never disclosed any user communications to any third party.
 
 A front page story right now on wsj.com (to prove that this hasn't been generated before the date specified):
-Coronavirus Tanked the Economy. Then Credit Scores Went Up.
-https://www.wsj.com/articles/coronavirus-tanked-the-economy-then-credit-scores-went-up-11603013402?mod=hp_lead_pos1
+Airlines Buckle Their Seat Belts for a Bumpy 2021
+https://www.wsj.com/articles/airlines-buckle-their-seat-belts-for-a-bumpy-2021-11609509614?mod=hp_lead_pos7
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEE9SgE9hzYdq6gO3DV6F+G+h8NfkIFAl+MRdsACgkQ6F+G+h8N
-fkIwcg/9GrvR9o+0rWs8c7cm/rzxOHvu1++HHnI9xsR9E/GnTV7Ww6wI9UOuRRyb
-XiU5d++TOCJUaguieyrvQFeeTJ7ikm8c3wOTvuDDIEX03fNYosutZQhP9uyeArKF
-T7GCZ0CdY8j+YMKorqy9DaXOHbTw/FgDgAizQxtY16a/tTdF8Rn6Dhdyry+JVwZq
-NAuNcRs9XpIluVTY/JvolaaYaGjNCimLaBHWdga6Z3qYVvrKtlFJZJ3MiUkUEFep
-+c2VaxGNkHYiZ02DqBIscwfg/Qg4eMWQ45/1oeFaPPe4r0XM34ULp37XCE5z+JAE
-IVkwmlBAC65eB7KHspvbKFl5kxiofw7IFg6K8XJebDZVATO9cNYpVvNgEVAGeGWB
-kBhtvKthycXedEzC+mVk9p/efz0dBTQls1skfnRe9V3ML11p6xoHMAnbmmmk7/mz
-v8zlvLu/tRfo9UEPOulD/pjz4NUwPSeIXQTT0i+LwCnksRVccuSVHllxjiHJwQxp
-UAc15czPqt4RpCYV2HEfE1+BZvZk7AAu2EeOgnVDE8Dz7t+P07nDX7qxxVSOOi+b
-sAMttQZLKUCFaqyGQ4WdFqsVRdDA7YLyTcLqfIC1KlaA0isicu1BV2X/1Urtdcff
-Mxpv6XKyTLIg20vmut1fpuQBGO3TtY3fKMxAUP9xbXVLOarq+ww=
-=p08E
+iQIzBAEBCAAdFiEE9SgE9hzYdq6gO3DV6F+G+h8NfkIFAl/vfoMACgkQ6F+G+h8N
+fkKVgRAAl1GCbs1F3otLf/ElMYeMaX8zSE12CG17aeBEUjQ+uLa0SV99oD9hwXyE
+8CWpqs5wtvy8wOmlxCThY9z9aVGM1aDXHO1lKG9LpdpvyjrSw3Tos+6qQ6nMxYdm
+JlE4my2V2HDTjGHvzJqzoSI/wmRYWUPMgdPhnMPPVphygw0mdkF3W8iGiwAN4kQq
+nNhuLHKwecyITloGM591BiPLkJmiYRndAOZEGj+V19bkJsl6J1TzZil49/guY4AD
+8NvjlpDR2+xPCG4/JrwecqM2QrjrlP1kds52Mq8blfHoJV6VNjjPo4B+Md9FClmJ
+kaoskYxgiEggiXyoBJi6uwyavNRNGet3O0S1w7IZSj2pWdT8P2Eomak+p/zXHRMg
+RRZ7zB2BH5f29HdtDPjayhbC7n7X8k7+yh/XY7HcnwRLGW9s/uVwIvpti3Mi2FHS
+zwXgdLmeRzw4eFnInAHx8Jq7pUrD7bvPAQ7A4etbTb7QbKZaHjUQeeHSzz1wvsz8
+Qj2dGJb772U/VJQu+6G88r2iXx/43r21j8miBgMLNzkr2YTSRHB6zwTFZGPc/s3N
+fyhhKMOxOLSiIPR+BlCXe7vJm6drvGO/m5kE+yOZoZ61t6QDRNJRRCjQvBb5DSq2
+GWFI1RcnNyUIfcWyfSnMu9g+5LmP7CbbFyHkaYIJBhMKiNKxXSw=
+=0AWn
 -----END PGP SIGNATURE-----
