@@ -8,13 +8,11 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Poppins`,
-            variants: [`300`, `400`, `600`, `700`],
-          },
+          `limelight`,
+          `Poppins\:300,400,600,700`, // you can also specify font weights and styles
         ],
       },
     },

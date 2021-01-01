@@ -12,15 +12,26 @@ import styled from "styled-components"
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(sourceInstanceName: { eq: "images" }, name: { eq: "jon" }) {
+      jonFile: file(sourceInstanceName: { eq: "images" }, name: { eq: "jon" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
+      bugsnagFile: file(
+        sourceInstanceName: { eq: "images" }
+        name: { eq: "bugsnag" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 200) {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+        }
+      }
     }
   `)
+
   return (
     <Layout>
       <SEO title="About" />
@@ -29,7 +40,7 @@ const AboutPage = () => {
         <Container>
           <h2>About</h2>
           <ImageWrapper>
-            <StyledImage fluid={data.file.childImageSharp.fluid} />
+            <StyledImage fluid={data.jonFile.childImageSharp.fluid} />
             <br />
           </ImageWrapper>
           <p>
@@ -60,6 +71,22 @@ const AboutPage = () => {
             infrastructure that is highly-available, and that I chose AWS
             largely due to their long track record supporting services for many
             years.
+          </p>
+          <p>
+            <BugsnagWrapper>
+              <div>
+                We also rely on Bugsnag to anonymously report errors that are
+                encountered during the app so we can work to keep it as reliable
+                as possible.
+              </div>
+              <div>
+                <a href="https://www.bugsnag.com">
+                  <BugsnagImage
+                    fluid={data.bugsnagFile.childImageSharp.fluid}
+                  />
+                </a>
+              </div>
+            </BugsnagWrapper>
           </p>
           <h4>Behind the Keyboard</h4>
           <p>
@@ -111,4 +138,13 @@ const StyledImage = styled(Img)`
   @media (max-width: ${props => props.theme.screen.md}) {
     width: 100px;
   }
+`
+
+const BugsnagWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
+const BugsnagImage = styled(Img)`
+  width: 100px;
 `
