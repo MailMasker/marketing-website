@@ -141,7 +141,7 @@ const DataPage = () => (
             "Five Eyes" country
           </a>{" "}
           with a history of mass government surveillance. For this reason, we
-          have a <Link to="warrant-canary">Warrant Canary</Link> page that is
+          have a <Link to="/warrant-canary">Warrant Canary</Link> page that is
           updated monthly.{" "}
           <a
             href="https://www.eff.org/deeplinks/2014/04/warrant-canary-faq"
