@@ -2,8 +2,8 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 
 import { Container } from "../global"
 import { FiMail } from "react-icons/fi"
-import Img from "gatsby-image"
 import React from "react"
+import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 const Footer = () => {
@@ -206,7 +206,7 @@ const FooterBottomItemsContainer = styled.div`
   }
 `
 
-const StyledImage = styled(Img)`
+const StyledImage = styled(StaticImage)`
   width: 175px;
 `
 

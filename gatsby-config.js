@@ -42,7 +42,7 @@ module.exports = {
       resolve: "gatsby-plugin-ackee-tracker",
       options: {
         domainId: process.env.ACKEE_DOMAIN_ID,
-        server: "https://mail-masker-analytics.herokuapp.com",
+        server: "https://mail-masker-analytics.netlify.app",
         ignoreLocalhost: true,
         detailed: true,
       },

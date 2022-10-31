@@ -2,11 +2,11 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import { Container } from "../components/global"
 import Footer from "../components/sections/footer"
-import Img from "gatsby-image"
 import Layout from "../components/common/layout/layout"
 import Navigation from "../components/common/navigation/navigation"
 import React from "react"
 import SEO from "../components/common/layout/seo"
+import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 const AboutPage = () => {
@@ -130,7 +130,7 @@ const ImageWrapper = styled.div`
   }
 `
 
-const StyledImage = styled(Img)`
+const StyledImage = styled(StaticImage)`
   width: 149px;
   @media (max-width: ${props => props.theme.screen.lg}) {
     width: 149px;
@@ -145,6 +145,6 @@ const BugsnagWrapper = styled.div`
   justify-content: space-between;
 `
 
-const BugsnagImage = styled(Img)`
+const BugsnagImage = styled(StaticImage)`
   width: 100px;
 `

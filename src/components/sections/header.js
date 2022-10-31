@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
 import { Container } from "../global"
-import Img from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 const Header = () => {
@@ -227,7 +227,7 @@ const ImageWrapper = styled.div`
   }
 `
 
-const StyledImage = styled(Img)`
+const StyledImage = styled(StaticImage)`
   width: 500px;
   @media (max-width: ${props => props.theme.screen.lg}) {
     width: 300px;
