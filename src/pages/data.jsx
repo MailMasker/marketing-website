@@ -1,11 +1,11 @@
+import { Link } from "gatsby"
+import React from "react"
+import styled from "styled-components"
+import Layout from "../components/common/layout/layout"
+import SEO from "../components/common/layout/seo"
+import Navigation from "../components/common/navigation/navigation"
 import { Container } from "../components/global"
 import Footer from "../components/sections/footer"
-import Layout from "../components/common/layout/layout"
-import { Link } from "gatsby"
-import Navigation from "../components/common/navigation/navigation"
-import React from "react"
-import SEO from "../components/common/layout/seo"
-import styled from "styled-components"
 
 const DataPage = () => (
   <Layout>
@@ -109,6 +109,11 @@ const DataPage = () => (
         <p>
           Our server logs are all set to be automatically deleted after 5 days.
         </p>
+        <SectionHeader>reCAPTCHA</SectionHeader>
+        <p>
+          We rely on Google reCAPTCHA to prevent abuse of our service by bots
+          and other automated systems.
+        </p>
         <h3>What we don't collect</h3>
         <p>
           And for completeness, here's a list of common things that we don't do:
@@ -116,7 +121,8 @@ const DataPage = () => (
         <ul>
           <li>
             We don't use Google Analytics, Facebook SDKs, or anything else that
-            allows other companies to track you
+            allows other companies to track you. As mentioned previously, we use
+            Google reCAPTCHA to prevent abuse.
           </li>
           <li>
             We don't set any cookies except the one that keeps you logged in
