@@ -2,20 +2,15 @@ import "tippy.js/dist/tippy.css" // eslint-disable-line
 
 import { Container, Section } from "../global"
 
-import React from "react"
 import Tippy from "@tippyjs/react"
+import React from "react"
 import styled from "styled-components"
 
-const freeFeatures = [
+const premiumFeatures = [
   {
     title: "Your Mail Masks are yours forever",
     description:
       "Once you create a Mail Mask (ex: you@mailmasker.com), it belongs to your account forever and no one else can use it.",
-  },
-  {
-    title: "3 primary Mail Masks",
-    description:
-      "You can create up to 3 Mail Masks (ex: you@mailmasker.com), and unlimited secondary masks (ex: you.whatever1@mailmasker.com, you.whatever2@mailmasker.com, etc)",
   },
   {
     title: "Unlimited secondary Mail Masks",
@@ -23,21 +18,9 @@ const freeFeatures = [
       "A secondary Mail Mask has a dot after the alias of one of your primary Mail Masks. For example, if your primary Mail Mask was you@example.com, then you could create a secondary mask by sending an email to you.whatever@example.com.",
   },
   {
-    title: "Forward to 1 email",
-    description:
-      "Your Mail Masks will forward to a single external email address.",
-  },
-  {
     title: "Data export",
     description:
       "We allow you to download a full record of your data in our system.",
-  },
-]
-
-const premiumFeatures = [
-  {
-    title: "+ All Free features",
-    description: "Premium includes everything in the Free plan, plus more!",
   },
   {
     title: "Unlimited primary Mail Masks",
@@ -64,25 +47,15 @@ const Pricing = () => (
   <Section id="pricing">
     <StyledContainer>
       <Subtitle>Pricing</Subtitle>
-      <SectionTitle>Flexible plans with no surprises</SectionTitle>
+      <SectionTitle>One plan with no surprises</SectionTitle>
+      <SectionBody>
+        Mail Masker is a paid service. Instead of a free trial, we offer a 30
+        day money-back guarantee.
+      </SectionBody>
       <FeaturesGrid>
-        <FeatureItemFree>
-          <FeatureTitle>Free</FeatureTitle>
-          <FeatureSubtitle>$0</FeatureSubtitle>
-          {freeFeatures.map(feature => (
-            <Tippy content={<span>{feature.description}</span>}>
-              <FeatureLineItem>
-                <span>{feature.title}</span>
-              </FeatureLineItem>
-            </Tippy>
-          ))}
-        </FeatureItemFree>
         <FeatureItemPremium>
           <FeatureTitlePremium>Premium</FeatureTitlePremium>
-          <FeatureSubtitlePremium>
-            $12 / year
-            {/* <FeatureSubSubtitle> or $9 / year</FeatureSubSubtitle> */}
-          </FeatureSubtitlePremium>
+          <FeatureSubtitlePremium>$24 / year</FeatureSubtitlePremium>
           {premiumFeatures.map((feature, index) =>
             index > 0 ? (
               <Tippy content={<span>{feature.description}</span>}>
@@ -100,10 +73,6 @@ const Pricing = () => (
           )}
         </FeatureItemPremium>
       </FeaturesGrid>
-      <BottomText>
-        Looking for self-hosted, custom domains, or team plans? Get in touch:{" "}
-        <a href="mailto:plans@mailmasker.com">plans@mailmasker.com</a>
-      </BottomText>
     </StyledContainer>
   </Section>
 )
@@ -113,6 +82,13 @@ export default Pricing
 const StyledContainer = styled(Container)``
 
 const SectionTitle = styled.h3`
+  color: ${props => props.theme.color.primary};
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 40px;
+  text-align: center;
+`
+const SectionBody = styled.p`
   color: ${props => props.theme.color.primary};
   display: flex;
   justify-content: center;
@@ -130,26 +106,18 @@ const Subtitle = styled.h5`
 
 const FeaturesGrid = styled.div`
   max-width: 670px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
   margin: 0px auto;
-  grid-column-gap: 40px;
-  grid-row-gap: 35px;
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    grid-template-columns: 1fr;
-  }
 `
 
-const FeatureItemFree = styled.div`
+const FeatureItemPremium = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-`
-
-const FeatureItemPremium = styled(FeatureItemFree)`
   border: 1px solid #3e898b;
 `
 

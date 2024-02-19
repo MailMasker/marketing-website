@@ -18,13 +18,6 @@ const Features = () => (
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Free Forever</FeatureTitle>
-          <FeatureText>
-            Your Mail Masks are yours forever, and there's no pressure to
-            upgrade to a paid plan.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
           <FeatureTitle>Security</FeatureTitle>
           <FeatureText>
             Make it harder for others to access your accounts when they can't
@@ -43,20 +36,6 @@ const Features = () => (
           <FeatureText>
             We delete your emails from our servers ASAP, and we'll never share
             or sell your data. <Link to="/data/">Full details.</Link>
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>Open Source</FeatureTitle>
-          <FeatureText>
-            We've made Mail Masker is open source to increase transparency,
-            accountability, auditability, and trust.{" "}
-            <a
-              href="https://github.com/mailmasker"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View source.
-            </a>
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>

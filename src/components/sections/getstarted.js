@@ -11,8 +11,6 @@ const GetStarted = () => (
       <TryItLink href="https://app.mailmasker.com/sign-up">
         <TryItButton>Create your first Mail Mask</TryItButton>
       </TryItLink>
-
-      <Subtitle>No credit card required for the Free Plan.</Subtitle>
     </GetStartedContainer>
   </StyledSection>
 )

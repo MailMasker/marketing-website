@@ -1,11 +1,11 @@
+import { Link } from "gatsby"
+import React from "react"
+import styled from "styled-components"
+import Layout from "../components/common/layout/layout"
+import SEO from "../components/common/layout/seo"
+import Navigation from "../components/common/navigation/navigation"
 import { Container } from "../components/global"
 import Footer from "../components/sections/footer"
-import Layout from "../components/common/layout/layout"
-import { Link } from "gatsby"
-import Navigation from "../components/common/navigation/navigation"
-import React from "react"
-import SEO from "../components/common/layout/seo"
-import styled from "styled-components"
 
 const PrivacyPage = () => (
   <Layout>

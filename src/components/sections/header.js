@@ -1,9 +1,9 @@
-import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import React, { useState } from "react"
 
-import { Container } from "../global"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
+import { Container } from "../global"
 
 const Header = () => {
   const [email, setEmail] = useState("")
@@ -42,7 +42,7 @@ const Header = () => {
             </h2>
             <h2>
               We forward email to you, and you can stop the forwarding whenever
-              you want. Free forever.
+              you want.
             </h2>
             <HeaderForm onSubmit={handleSubmit}>
               <HeaderInputWrapper>

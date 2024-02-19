@@ -1,10 +1,10 @@
+import React from "react"
+import styled from "styled-components"
+import Layout from "../components/common/layout/layout"
+import SEO from "../components/common/layout/seo"
+import Navigation from "../components/common/navigation/navigation"
 import { Container } from "../components/global"
 import Footer from "../components/sections/footer"
-import Layout from "../components/common/layout/layout"
-import Navigation from "../components/common/navigation/navigation"
-import React from "react"
-import SEO from "../components/common/layout/seo"
-import styled from "styled-components"
 
 const TermsPage = () => (
   <Layout>
@@ -197,6 +197,23 @@ const TermsPage = () => (
           with the laws of the State of Arizona and United States of America and
           you irrevocably submit to the exclusive jurisdiction of the courts in
           that State or location.
+        </p>
+        <hr />
+        <h4>9. 30 Day Money-Back Guarantee</h4>
+        <p>
+          We offer a 30-day money-back guarantee for users who are not satisfied
+          with our services. This guarantee allows you to request a full refund
+          of your purchase within 30 days of the transaction date if you decide
+          that the Platform does not meet your needs. However, this guarantee is
+          subject to the terms and conditions outlined in this Terms of Service.
+          Violations of any terms or conditions specified in this document will
+          disqualify you from being eligible for the money-back guarantee. This
+          includes, but is not limited to, misuse of the Platform, unauthorized
+          access or distribution of content, infringement of intellectual
+          property rights, and any other activities deemed to be in violation of
+          these Terms of Service. We reserve the right to refuse a refund
+          request if we determine, at our sole discretion, that you have engaged
+          in conduct that violates these Terms.
         </p>
         <hr />
         <p>
